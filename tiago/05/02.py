@@ -21,3 +21,19 @@ def eh_triangular(n):
 # print(eh_triangular(1)) # Deve imprimir 'True'
 
 '''
+
+def eh_triangular(n):  
+    if n < 0:
+        return False
+    soma = 0
+    i = 1
+    while soma < n:
+        soma += i
+        i += 1
+    return soma == n
+
+   
+
+print(f"4 é triangular? {eh_triangular(4)}") 
+print(f"6 é triangular? {eh_triangular(6)}") 
+print(f"1 é triangular? {eh_triangular(1)}")
